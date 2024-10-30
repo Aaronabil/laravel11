@@ -18,27 +18,32 @@ class CategorySeeder extends Seeder
 
         Category::create([
             'name' => 'Work out',
-            'slug' => 'wo'
+            'slug' => 'wo',
+            'color' => 'red'
         ]);
 
         Category::create([
             'name' => 'Healthiest',
-            'slug' => 'sehat'
+            'slug' => 'sehat',
+            'color' => 'green'
         ]);
 
         Category::create([
             'name' => 'Design',
-            'slug' => 'dg'
+            'slug' => 'dg',
+            'color' => 'blue'
         ]);
 
         Category::create([
             'name' => 'Kacau',
-            'slug' => 'kicau'
+            'slug' => 'kicau',
+            'color' => 'purple'
         ]);
 
         Category::create([
             'name' => 'Miaw',
-            'slug' => 'wadaw'
+            'slug' => 'wadaw',
+            'color' => 'yellow'
         ]);
     }
 }
