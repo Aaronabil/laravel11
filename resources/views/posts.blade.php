@@ -29,7 +29,9 @@
     </div>
 </div>
 
-        <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-0">
+{{-- {{ $posts->links() }} --}}
+
+        <div class="py-2 my-3 px-4 mx-auto max-w-screen-xl lg:py-4 lg:px-0">
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             @forelse ($posts as $post)
             <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -64,11 +66,8 @@
                     </a>
                 </div>
             </article>
+            
             @empty
-            <!--
-    Graphic from https://www.opendoodles.com/
--->
-
 .<div class=" px-10 mx-auto ml-15">
     <div class="text-center flex justify-center items-center">
       <div>
@@ -114,5 +113,6 @@
             @endforelse
             </div>  
         </div>
+        {{ $posts->links() }}
 
 </x-layout>
